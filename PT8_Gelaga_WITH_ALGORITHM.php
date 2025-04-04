@@ -72,9 +72,9 @@
         <form method="POST" action="">
             <label for="item">Select Item:</label><br>
             <input type="radio" name="item" value="French Fries" required> French Fries  ($3.00)<br>
-            <input type="radio" name="item" value="Burger"> Burger ($6.50)<br>
-            <input type="radio" name="item" value="Spaghetti"> Spaghetti ($5.75)<br>
-            <input type="radio" name="item" value="Carbonara"> Carbonara ($7.00)<br>
+            <input type="radio" name="item" value="Yum Burger"> Burger ($6.50)<br>
+            <input type="radio" name="item" value="Jolly Spaghetti"> Spaghetti ($5.75)<br>
+            <input type="radio" name="item" value="Burger Steak"> Carbonara ($7.00)<br>
             <input type="radio" name="item" value="Chicken Nuggets"> Chicken Nuggets ($2.50)<br><br>
 
             <label for="quantity">Quantity:</label> <br>
@@ -97,9 +97,9 @@
             function getPrice($item) {
                 $prices = [
                     "French Fries" => 3.00,
-                    "Burger" => 6.50,
-                    "Spaghetti" => 5.75,
-                    "Carbonara" => 7.00,
+                    "Yum Burger" => 6.50,
+                    "Jolly Spaghetti" => 5.75,
+                    "Burger Steak" => 7.00,
                     "Chicken Nuggets" => 2.50
                 ];
                 return $prices[$item] ?? 0;
